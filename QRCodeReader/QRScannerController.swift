@@ -104,10 +104,11 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         
         
         // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video as the media type parameter.
-        let captureDevice = AVCaptureDevice.defaultDevice(withDeviceType: .builtInWideAngleCamera, mediaType: AVMediaTypeVideo, position: .back)
         
         
+        //let captureDevice = AVCaptureDevice.defaultDevice(withDeviceType: .builtInWideAngleCamera, mediaType: AVMediaTypeVideo, position: .back)
         
+        let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         do {
             
             
